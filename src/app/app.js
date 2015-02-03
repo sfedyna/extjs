@@ -2,15 +2,24 @@ Ext.application({
     name   : 'MyApp',
 
     launch : function() {
-
-       Ext.create('Ext.Panel', {
-            renderTo     : Ext.getBody(),
-            width        : 200,
-            height       : 150,
-            bodyPadding  : 5,
-            title        : 'Hello World',
-            html         : 'Hello <b>World</b>...'
-        });
+    Ext.create('Ext.form.Panel', {
+        renderTo: Ext.getBody(),
+        title: 'Login  Form',
+        height: 150,
+        width: 300,
+        bodyPadding: 10,
+        defaultType: 'textfield',
+        items: [
+            {
+                fieldLabel: 'username',
+                name: 'username'
+            },
+            {
+                fieldLabel: 'password',
+                name: 'password'
+            },
+        ]
+    });
 
     }
 });
