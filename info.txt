@@ -1,0 +1,5 @@
+ExtJS - це Javascript фреймворк, за допомогою якого можна робити професійні графічні веб інтерфейси і Ajax додаток.
+
+http://abrdev.com/?p=181
+
+http://www.extjs-tutorial.com/extjs/define-new-class-in-extjs
