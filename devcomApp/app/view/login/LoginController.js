@@ -9,7 +9,8 @@ Ext.define('devcomApp.view.login.LoginController', {
         if(Ext.getCmp('username').value == username && Ext.getCmp('password').value == password ){
             localStorage.setItem("sessionUser", true);
             this.getView().destroy();
-            Ext.widget('app-main');
+            var route = window.location.hash;
+            Ext.widget('devcomApp');
         }else{
             alert('You entered an incorrect username or password');
             return;

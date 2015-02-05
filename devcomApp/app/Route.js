@@ -11,9 +11,9 @@ Ext.define('devcomApp.Application', {
     views: [
       'devcomApp.view.login.Login',
       'devcomApp.view.frontend.Frontend',
-      'devcomApp.view.admin.Admin'
+      'devcomApp.view.admin.Admin',
+      'devcomApp.Route'
     ],
-    defaultToken : 'frontend',
     init: function() {
         var supportsLocalStorage = Ext.supports.LocalStorage, 
             loggedIn;
@@ -25,7 +25,6 @@ Ext.define('devcomApp.Application', {
         if(!loggedIn){
              Ext.widget('login');
         }
-        this.redirectTo('frontend');
     },
     routes : {
        'frontend' : 'onFrontend',
