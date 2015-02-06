@@ -4,5 +4,4 @@ Ext.define('devcomApp.view.admin.AdminModel', {
     data: {
         name: 'devcomApp - Admin'
     }
-
 });

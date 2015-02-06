@@ -5,9 +5,7 @@
  */
 Ext.define('devcomApp.Application', {
     extend: 'Ext.app.Application',
-    
     name: 'devcomApp',
-
     views: [
       'devcomApp.view.login.Login',
       'devcomApp.view.frontend.Frontend',
@@ -25,7 +23,6 @@ Ext.define('devcomApp.Application', {
         if(!loggedIn){
              Ext.widget('login');
         }
-        this.redirectTo('frontend');
     },
     routes : {
        'frontend' : 'onFrontend',
@@ -44,11 +41,13 @@ Ext.define('devcomApp.Application', {
     },
     onFrontend : function() {
         if(localStorage.getItem("sessionUser")){
+            Ext.destroy(Ext.ComponentQuery.query('admin'));
             Ext.widget('frontend');
         }
     },
     onAdmin : function() {
         if(localStorage.getItem("sessionUser")){
+            Ext.destroy(Ext.ComponentQuery.query('frontend'));
             Ext.widget('admin');
         }
     }
