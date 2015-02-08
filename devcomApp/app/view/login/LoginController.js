@@ -1,5 +1,4 @@
 Ext.define('devcomApp.view.login.LoginController', {
-    
     extend: 'Ext.app.ViewController',
     alias: 'controller.login',
     requires: ['devcomApp.view.login.LoginModel'],

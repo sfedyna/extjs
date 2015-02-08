@@ -8,8 +8,9 @@ Ext.define('devcomApp.Application', {
     name: 'devcomApp',
     views: [
       'devcomApp.view.login.Login',
+      'devcomApp.model.UserModel',
       'devcomApp.view.frontend.Frontend',
-      'devcomApp.view.admin.Admin'
+      'devcomApp.view.admin.Admin',
     ],
     defaultToken : 'frontend',
     init: function() {

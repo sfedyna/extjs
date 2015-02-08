@@ -1,0 +1,28 @@
+{
+    "success": true,
+    "users": [{
+        "userID": 1,
+        "name": "Fedyna",
+        "surname": "Yaroslav",
+        "date": "10/08/1991",
+        "email": "vasiv@mail.ru"
+    }, {
+        "userID": 2,
+        "name": "Iryna",
+        "surname": "Koval",
+        "date": "03/08/1993",
+        "email": "petfed@yandex.ru"
+    }, {
+        "userID": 3,
+        "name": "Andry",
+        "surname": "Dovgal",
+        "date": "11/07/1989",
+        "email": "vok@mail.ru"
+    }, {
+        "userID": 4,
+        "name": "Roman",
+        "surname": "Kondratuk",
+        "date": "05/08/1991",
+        "email": "vvvs@mail.ru"
+    }]
+}
