@@ -9,8 +9,7 @@ Ext.define("devcomApp.view.admin.Admin",{
         'Ext.grid.Panel'        
     ],
     title: 'Company employees devcom',
-    height: 1000,
-    width: 1000,
+    layout : 'fit',
     selType: 'cellmodel',
     plugins: [
         Ext.create('Ext.grid.plugin.CellEditing', {
